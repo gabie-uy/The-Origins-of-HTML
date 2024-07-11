@@ -129,7 +129,7 @@ Everything surrounded by the ``<!--`` and ``-->`` comment markers is ignored and
     <!-- I am a comment. -->
     <p>And I'm not a comment!</p>
 
-# In-Line vs. Multi-line''
+## In-Line vs. Multi-line''
 
 **In-Line**
 
