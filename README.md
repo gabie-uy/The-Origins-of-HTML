@@ -122,18 +122,116 @@ Elements can also be **siblings** if they share a direct parent element. Take th
 
 The two ``<li>`` elements are siblings because both are children of the same parent, the ``<ul>`` element.
 
+## Comments - craigslists.html
 
+Everything surrounded by the ``<!--`` and ``-->`` comment markers is ignored and not rendered on the browser:
 
+    <!-- I am a comment. -->
+    <p>And I'm not a comment!</p>
 
+# In-Line vs. Multi-line''
 
+**In-Line**
 
+    <p>This text is visible. <!-- But this is not. --></p>
 
+**Multi-Line**
 
+    <!--
+      This is also a comment.
+    -->
 
+## Attributes - wiki_article.html
 
+**Attributes** are additional settings that we can use to customize an element.
 
+They are usually name/value pairs, like ``name="value"``, where the name and value are separated by an equals sign:
 
+    <element name="value">Content</element>
 
+The ``name`` indicates the attribute we are setting for our element.
+The ``"value"`` for our attribute is surrounded by ``"`` double quotes.
 
+If we want to use **lowercase letters** instead:
 
+    <ol type="a">
+      <li>Power ⚡</li>
+      <li>Courage 🔥</li>
+      <li>Wisdom 🦉</li>
+    </ol>
+
+Or, if want to use **Roman numerals**:
+
+    <ol type="i">
+      <li>Power ⚡</li>
+      <li>Courage 🔥</li>
+      <li>Wisdom 🦉</li>
+    </ol>
+
+For uppercase list item types for letters and Roman numerals, use type="A" and type="I", respectively.
+
+### Attributes in ``<img>``
+
+    <img alt="8-bit sprite of person using a laptop" src="https://www.codedex.io/images/tier1.png">
+
+- The ``<img>`` element uses the ``src`` attribute to specify the file path of an image.
+- The ``alt`` text is displayed instead! This allows assistive devices to read our text and describe the image.
+
+### Attributes in ``<a>``
+
+    <a href="https://www.codedex.io/">Codédex.io</a>
+    <a href="https://www.codedex.io/" target="_blank">Codédex.io</a>
+    
+- The ``href`` attribute is where we add a URL that can be visited when the hyperlinked text is clicked.
+- We can also use the ``target`` attribute and set it to ``"_blank"`` to visit the URL on a separate tab on our browser:
+
+## Classes and IDs - lorem_ipsum.html
+
+``class`` and ``id`` are used for **labeling** elements.
+
+An element can be assigned multiple class values in the form of a **space-separated list**:
+
+    <p class="first-value second-value third-value">Hello, World</p>
+
+Each element can only have one ``id`` value with no spaces. Every ``id`` value should be unique in the entire page:
+
+    <p id="value">Hello, World</p>
+
+Additionally, ``id`` can be *used to link to another part of the same page*, such as the heading! This can be matched with an ``<a>`` anchor element's ``href`` attribute via a ``#`` hashtag symbol, followed by the identifier used for the ``id``:
+
+    <a href="#medellin">Link to Medellín</a>
+    
+    <h2 class="city" id="medellin">Medellín 🇨🇴</h2>
+
+Lastly, where only one ``id`` can be assigned to a single element, a ``class`` can be assigned to many:
+
+    <h2 class="city" id="medellin">Medellín 🇨🇴</h2>
+    <h2 class="city" id="libson">Lisbon 🇵🇹</h2>
+    <h2 class="city" id="bali">Bali 🇮🇩</h2>
+
+The values for the ``class`` and ``id`` attributes must always be lowercase. If their name is made of multiple words, they should be separated by dashes ``-``
+
+***Note: A good way to remember class vs id is... there can be multiple students in a class, but each student should have an unique id. 💡***
+
+## Division
+
+``<div>`` is a way to create sections for a page
+
+The ``<div>`` element is kind of like a generic container with no particular meaning. This element and the ``class`` and ``id`` attributes can go hand in hand.
+
+The ``<div>`` element is used to group content and be labeled by the ``class`` and ``id`` attributes.
+
+    <div class="page-section" id="about-me">
+      <h2>About Me</h2>
+      <p>Ness is an aspiring web developer!</p>
+    </div>
+    
+    <div class="page-section" id="social-media">
+      <h2>Social:</h2>
+      <ul>
+        <li>GitHub</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+      </ul>
+    </div>
 
