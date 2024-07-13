@@ -235,3 +235,68 @@ The ``<div>`` element is used to group content and be labeled by the ``class`` a
           <li>LinkedIn</li>
       </ul>
     </div>
+
+## Style Attribute
+
+We can apply a ``style`` attribute to any HTML element to stylize certain aspects of that element, such as what color the text should be:
+
+    <p>
+      Roses are <span style="color:red;">red</span>.<br />
+      Violets are <span style="color:blue;">blue</span>.
+    </p>
+
+This attribute uses a *special syntax* where a style is made of a property (i.e., color) and a value (red), separated by a  ``:`` colon. Multiple styles can be applied to a single element, but they must be separated by a ``;`` semi-colon.
+
+    <p>
+      Roses are <span style="color:red; text-decoration:underline;">red</span>.<br />
+      Violets are <span style="color:blue; text-decoration:underline;">blue</span>.
+    </p>
+
+Alternatively, the ``<style>`` element can be used in the ``<head>`` to style our elements in the ``<body>``.
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          ... Styles for elements go here
+        </style>
+      </head>
+      <body>
+        ... Elements go here
+      </body>
+    </html>
+
+Elements can be selected inside the ``<style>`` element using curly braces ({ }):
+
+    <style>
+      element {
+        property: value;
+      }
+    </style>
+
+Using it with class ``.`` and id ``#``:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          span {
+            text-decoration: underline;
+          }
+
+          #red-word {
+            color: red;
+          }
+
+          #blue-word {
+            color: blue;
+          }
+        </style>
+      </head>
+      <body>
+        <p>
+          Roses are <span id="red-word">red</span>.<br />
+          Violets are <span id="blue-word">blue</span>.<br />
+        </p>
+      </body>
+    </html>
