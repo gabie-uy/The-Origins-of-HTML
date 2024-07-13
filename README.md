@@ -63,9 +63,9 @@ A self-closing tag doesn't need to be closed manually by a closing tag (i.e., it
 
 ``<a>`` anchor element! This link tag allows us to add a hyperlink to a piece of text. Let's see how we can do this:
 
-<a href="https://archive.org/web">Internet Archive</a>
+    <a href="https://archive.org/web">Internet Archive</a>
 
-An ``href``, or **hyperlink reference**, is a reference or pointer to another website that is linked in our HTML. When the text “Internet Archive” is clicked, the HTML will redirect to that site, which in our case, is https://archive.org/web!
+An ``href``, or **hyperlink reference**, is a reference or pointer to another website that is linked in our HTML. When the text “Internet Archive” is clicked, the HTML will redirect to that site, which in our case, is https://archive.org/web
 
 ***Note: This can also be used to point to an email or phone number using a ``mailto:``, ``tel:``, or ``sms:`` parameter, respectively.***
 
@@ -77,8 +77,9 @@ An ``href``, or **hyperlink reference**, is a reference or pointer to another we
 
 ## HTML Structure - blueprint.html
 
-**MUST-HAVES**
-- ``<!DOCTYPE html>`` is the document type declaration that appears at the top of a .html file and tells the browser that our file is written in HTML5. This is used with a <html> element containing all the code processed on the page.
+### MUST-HAVES
+
+``<!DOCTYPE html>`` is the document type declaration that appears at the top of a .html file and tells the browser that our file is written in HTML5. This is used with a ``<html>`` element containing all the code processed on the page.
 
 *Notice how the ``<!DOCTYPE html>`` doesn’t have a closing tag, while ``<html>`` does.*
 
@@ -89,7 +90,7 @@ An ``href``, or **hyperlink reference**, is a reference or pointer to another we
 ``<head>``: This contains all the info for your browser that's not visible on the page.
 
 ``<body>``: This contains all of the content that you will end up seeing on the page.
-The <title> element goes in the <head> and assigns text to the tab in our browser.
+The ``<title>`` element goes in the ``<head>`` and assigns text to the tab in our browser.
 
      <!DOCTYPE html>
      <html>
@@ -131,11 +132,11 @@ Everything surrounded by the ``<!--`` and ``-->`` comment markers is ignored and
 
 ## In-Line vs. Multi-line''
 
-**In-Line**
+### In-Line
 
     <p>This text is visible. <!-- But this is not. --></p>
 
-**Multi-Line**
+### *Multi-Line**
 
     <!--
       This is also a comment.
@@ -181,7 +182,7 @@ For uppercase list item types for letters and Roman numerals, use type="A" and t
 
     <a href="https://www.codedex.io/">Codédex.io</a>
     <a href="https://www.codedex.io/" target="_blank">Codédex.io</a>
-    
+
 - The ``href`` attribute is where we add a URL that can be visited when the hyperlinked text is clicked.
 - We can also use the ``target`` attribute and set it to ``"_blank"`` to visit the URL on a separate tab on our browser:
 
@@ -222,16 +223,15 @@ The ``<div>`` element is kind of like a generic container with no particular mea
 The ``<div>`` element is used to group content and be labeled by the ``class`` and ``id`` attributes.
 
     <div class="page-section" id="about-me">
-      <h2>About Me</h2>
-      <p>Ness is an aspiring web developer!</p>
-    </div>
-    
+        <h2>About Me</h2>
+        <p>Ness is an aspiring web developer!</p>
+      </div>
+      
     <div class="page-section" id="social-media">
       <h2>Social:</h2>
-      <ul>
-        <li>GitHub</li>
-        <li>Twitter</li>
-        <li>LinkedIn</li>
+        <ul>
+          <li>GitHub</li>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
       </ul>
     </div>
-
