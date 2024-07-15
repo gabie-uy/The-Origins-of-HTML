@@ -457,3 +457,157 @@ Labels can be used in forms to associate pieces of text with form controls and i
 <br><br>
 <input type="submit">
 </form>
+
+## The Header
+
+The ``<header>`` element always goes in the ``<body>`` element. It usually contains a heading element ``(<h1>-<h6>)``.
+
+    <body>
+      <header>
+        <h1>Welcome to My Site!</h1>
+      </header>
+    </body>
+
+*Note: This is not to be confused with the ``<head>`` element that exists outside the ``<body>`` element.*
+
+## Navigation
+
+The semantic element used for this is the ``<nav>`` element. This usually goes inside of a ``<header>`` element.
+
+    <header>
+      <nav>
+        <!-- Links go here. -->
+      </nav>
+    </header>
+
+The ``<nav>`` element may contain ordered lists, unordered lists, or a combination of both.
+
+## Main & Footer
+
+### Main
+
+Where all the main information goes; uses  ``<main>``.
+
+    <body>
+      <main>
+        <!-- Main information goes here. -->
+      </main>
+    </body>
+
+### Footer
+
+The information in this element usually goes beneath the main content of the page, uses ``<footer>`` and it includes:
+
+- The name of the company/creator(s) of the page.
+- Some copyright information.
+- Additional navigation links to other sections or other sites.
+
+
+        <footer>
+        <!-- Footer content goes here. -->
+        </footer>
+
+## Page Sections
+
+We use the ``<section>`` element to group pieces of related content together.
+
+    <main>
+      <section>
+        <h2>Section A</h2>
+      </section>
+      <section>
+        <h2>Section B</h2>
+      </section>
+      <section>
+        <h2>Section C</h2>
+      </section>
+    </main>
+
+*Note: Unlike the ``<main>`` element, a page can have multiple ``<section>`` elements!*
+
+## Single Articles
+
+While the ``<section>`` element groups together pieces of related content, **we use the ``<article>`` element for those singular pieces of content.**
+
+    <section>
+      <h2>Section Heading</h2>
+      <article>
+        <h3>Article Heading</h3>
+        Piece of content
+      </article>
+    </section>
+
+While not required, an ``<article>`` element should begin with a heading element (much like with a ``<section>`` element).
+
+You can also nest an ``<article>`` within another ``<article>`` element. This is usually done if there is a piece of standalone markup within a single piece of content (e.g., a single comment from a single blog post).
+
+## Figures
+
+A "figure" is usually a graphic, image, or diagram.
+
+    <figure>
+      <!-- Figure content goes here. -->
+    </figure>
+
+While the contents in a ``<figure> ``element are grouped together, they can be placed either in the page's main content or somewhere else.
+
+## Captioning Figures
+
+The ``<figcaption>`` element is used to describe what is in the ``<figure>`` element.
+
+    <figure>
+      <img
+        width="500"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1024px-Tsunami_by_hokusai_19th_century.jpg"
+        alt="Great Wave off Kanagawa by Hokusai"
+      />
+      <figcaption>The Great Wave Off Kanagawa by Hokusai</figcaption>
+    </figure>
+
+<figure>
+  <img
+    width="500"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1024px-Tsunami_by_hokusai_19th_century.jpg"
+    alt="Great Wave off Kanagawa by Hokusai"
+  />
+  <figcaption>The Great Wave Off Kanagawa by Hokusai</figcaption>
+</figure>
+
+We can also use the ``<figcaption>`` element to describe multiple pieces of content within the ``<figure>`` element:
+
+    <figure style="margin:0;display:inline;">
+      <img
+        width="150"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/250px-Brooklyn_Bridge_Manhattan.jpg"
+        alt="Brooklyn Bridge"
+      />
+      <img
+        width="150"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg"
+        alt="Prosepct Park, Brooklyn, NY, USA"
+      />
+      <img width="150"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg/1024px-Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg"
+      alt="Coney Island, Brooklyn, NY, USA" />
+
+      <figcaption>Notable Brooklyn spots (from left to right): Brooklyn Bridge; Prospect Park; Coney Island</figcaption>
+    </figure>
+
+<figure style="margin:0;display:inline;">
+  <img
+    width="150"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/250px-Brooklyn_Bridge_Manhattan.jpg"
+    alt="Brooklyn Bridge"
+  />
+  <img
+    width="150"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg"
+    alt="Prosepct Park, Brooklyn, NY, USA"
+  />
+  <img width="150"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg/1024px-Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg"
+  alt="Coney Island, Brooklyn, NY, USA" />
+
+  <figcaption>Notable Brooklyn spots (from left to right): Brooklyn Bridge; Prospect Park; Coney Island</figcaption>
+</figure>
+
