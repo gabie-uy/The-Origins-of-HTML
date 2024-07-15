@@ -352,3 +352,59 @@ This tells the form to expect a text input with the typical email syntax (includ
 
 Dots will replace the text that would otherwise appear in the text box:
 
+### Input Validation
+
+Forms can also mask text input if the ``<input>`` element has a "password" type. We can even give it a ``minlength`` and ``maxlength`` attribute to further validate the input:
+
+    <input type="password" minlength="4" maxlength="10">
+
+### Required Data
+
+The ``required`` attribute can be applied to one or more form inputs to enforce this.
+
+    <form method="dialog">
+      Name: <input type="text" required>
+      <br><br>
+      Favorite Color: <input type="text">
+      <input type="submit">
+    </form>
+
+### Input Type: Number
+
+To prompt the <input> element for numbers, we do the following:
+
+    <input type="number">
+
+Example:
+<input type="number">
+
+#### ``step`` Attribute
+
+    <input type="number" step="2">
+
+<input type="number" step="2">
+
+Makes the value for going up or down a number by 2.
+
+a max and min attribute can be used to set how high or low this input can go:
+
+    <input type="number" min="1" max="42">
+
+Input Type: Checkbox and Radio
+
+``"checkbox"`` type renders as a box that is ticked off to mark the input as "finished" or "complete."
+
+    <h3>Favorite Movie Genres</h3>
+    <input type="checkbox"> Action<br>
+    <input type="checkbox"> Sci-Fi<br>
+    <input type="checkbox"> Rom-Com<br>
+    <input type="checkbox"> K-Drama<br>
+    <input type="checkbox"> Documentary<br>
+
+Radio buttons are lists of options.
+
+    <h3>Which do you think?</h3>
+    <input type="radio"> Yanny
+    <br>
+    <input type="radio"> Laurel
+
