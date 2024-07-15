@@ -371,7 +371,7 @@ The ``required`` attribute can be applied to one or more form inputs to enforce 
 
 ### Input Type: Number
 
-To prompt the <input> element for numbers, we do the following:
+To prompt the ``<input>`` element for numbers, we do the following:
 
     <input type="number">
 
@@ -386,7 +386,7 @@ Example:
 
 Makes the value for going up or down a number by 2.
 
-a max and min attribute can be used to set how high or low this input can go:
+A max and min attribute can be used to set how high or low this input can go:
 
     <input type="number" min="1" max="42">
 
@@ -408,3 +408,52 @@ Radio buttons are lists of options.
     <br>
     <input type="radio"> Laurel
 
+### Textareas
+
+The ``<textarea>`` element renders as a plain, mini-text editor on the web page.
+
+    <textarea id="data-entry" rows="7" cols="42"  placeholder="Enter some data here!"></textarea>
+
+<textarea id="data-entry" rows="7" cols="42"  placeholder="Enter some data here!"></textarea>
+
+In addition to class and id, the ``<textarea>`` uses the following attributes:
+
+``rows``: The amount of visible rows, or text lines (defaulting at 2).
+
+``cols``: The number of visible columns in average character widths (defaulting at 20).
+
+``placeholder``: Some default text meant to explain what kind of data should be entered.
+
+The required attribute can be applied to the 
+``<textarea>`` element, too.
+
+### Form Labels
+
+Labels can be used in forms to associate pieces of text with form controls and inputs.
+
+    <form>
+      <label>Book Title: </label><input type="text">
+      <br><br>
+      <label>Author: </label><input type="text">
+      <br><br>
+      <input type="submit">
+    </form>
+
+    <form>
+
+    <!-- 
+    
+    Simply defined as: 
+    
+    <form>
+      <label>Book Title: <input type="text"></label>
+      <label>Author: <input type="text"></label>
+    </form>
+    -->
+
+<label>Book Title: </label><input type="text">
+<br><br>
+<label>Author: </label><input type="text">
+<br><br>
+<input type="submit">
+</form>
