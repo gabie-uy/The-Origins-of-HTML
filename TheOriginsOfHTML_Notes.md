@@ -610,4 +610,3 @@ We can also use the ``<figcaption>`` element to describe multiple pieces of cont
 
   <figcaption>Notable Brooklyn spots (from left to right): Brooklyn Bridge; Prospect Park; Coney Island</figcaption>
 </figure>
-
